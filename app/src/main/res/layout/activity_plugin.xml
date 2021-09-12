@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Plugin"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingHorizontal="@dimen/fab_margin"
+    android:paddingVertical="@dimen/fab_margin"
+    android:layout_marginTop="5dp" >
+
+    <TextView
+        android:id="@+id/tv_sendtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/plugin_text"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_sendfile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sendtext"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tv_sendfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:fontFamily="monospace"
+        android:text="@string/plugin_file"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sendtext"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sendfile"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sendfile"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
